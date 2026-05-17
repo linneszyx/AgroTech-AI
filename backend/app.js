@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://itssuryanshcooldude346_db_user:bDzBKgjv1oNDajXm@cluster0.i79bucl.mongodb.net/?appName=Cluster0', {
+mongoose.connect('mongodb+srv://', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   serverSelectionTimeoutMS: 5001,
@@ -58,7 +58,7 @@ app.post('/signup', async (req, res) => {
       service: 'gmail',
       auth: {
         user: 'kukkiupadhyay343@gmail.com',
-        pass: 'zipecqrqfsxentpy',
+        pass: '',
       },
     });
 
